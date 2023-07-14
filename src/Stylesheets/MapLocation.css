@@ -1,0 +1,79 @@
+.map-section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  z-index: 0;
+  margin-top: 10px; /* Ajusta el valor según la altura de tu encabezado */
+}
+.separator {
+  width: 50%;
+  height: 1px;
+  background-color: black;
+  margin: 0 auto; /* Centra horizontalmente el separador */
+}
+
+.main-search-container-mapLocation {
+  width: 80vw;
+  max-width: 900px;
+  position: absolute;
+  z-index: 0;
+  top: 88%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  flex-direction: row;
+}
+.main-search-container-input-mapLocation {
+  width: 40vw;
+  max-width: 500px;
+  height: 40px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  background-color: #edf1d6;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding-left: 10px;
+}
+.main-search-container-input:focus {
+  outline: 2px solid #40513b;
+}
+.main-search-container-logo-mapLocation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 3px 3px 0;
+  background-color: #9dc08be0;
+  /* border-left: 1px solid black; */
+  height: 45px;
+  width: 45px;
+  cursor: pointer;
+}
+.main-search-container-logo:hover {
+  background-color: #609966;
+  transition: 0.25s;
+}
+.parking-card-section{
+  width: 100%;
+  height: auto;
+  top: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width:767px) {
+  .main-search-container{
+    top: 83%;
+  }
+  .main-card-stack{
+    margin-top: 810px !important;
+  }
+}
+@media screen and (max-width:900px){
+  .main-card-stack{
+    margin-top: 810px !important;
+  }
+}

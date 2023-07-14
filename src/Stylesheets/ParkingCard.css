@@ -1,0 +1,43 @@
+.main-card {
+  width: 900px;
+  height: 80px;
+  background-color: #9DC08B;
+  border-radius: 5px;
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+  justify-content: flex-start;
+  flex-grow: 1;
+  flex-direction: column;
+  box-shadow: 0 0 7px #9dc08b;
+  /* border-top: 1px solid black; */
+  border-bottom:3px solid #609966;
+  /* border-left: 10px solid #609966; */
+  border-right: 3px solid #609966;
+}
+
+.main-card .item {
+  display: flex;
+  align-items: center; /* Ajusta el valor del margen según tus necesidades */
+  color: #f7fae5;
+}
+.super-user-name {
+  width: 100%;
+  height: auto;
+  font-size: 0.9em;
+  color: #EDF1D6;
+  padding: 5px;
+  text-shadow: 0.5em;
+}
+@media (max-width: 900px) {
+  .main-card {
+    width: 500px; /* Ajusta el valor según tus necesidades */
+    height: auto;
+  }
+}
+@media screen and (max-width:400px) {
+  .main-card{
+    width: 300px;
+    height: auto;
+  }
+}

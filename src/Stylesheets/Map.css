@@ -1,0 +1,21 @@
+.map-container{
+  width: 54vw;
+  height: 500px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+@media screen and (max-width:767px) {
+  .map-container{
+    width: 80vw;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .map-container {
+    height: 60vh;
+  }
+}
+
+/*OVERRIDES*/
+.leaflet-popup {
+  padding-bottom: 120px; /* adjust as you see fit */
+}

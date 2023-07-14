@@ -1,0 +1,52 @@
+.car-image-one {
+  position: absolute;
+  top: 0;
+  left: -100px;
+  height: 100px;
+  animation: carMovement1 8s linear infinite;
+  animation-delay: 0s;
+}
+
+.car-image-two {
+  position: absolute;
+  top: 0;
+  right: -100px;
+  height: 100px;
+  animation: carMovement2 6s linear infinite;
+  animation-delay: 2s;
+}
+.car-image-three {
+  position: absolute;
+  top: 0;
+  right: -100px;
+  height: 100px;
+  animation: carMovement3 6s linear infinite; /* Ajusta la duración de la animación */
+  animation-delay: 3s;
+}
+
+@keyframes carMovement1 {
+  0% {
+    transform: translateX(-900%);
+  }
+  100% {
+    transform: translateX(900%);
+  }
+}
+
+@keyframes carMovement2 {
+  0% {
+    transform: translateX(900%);
+  }
+  100% {
+    transform: translateX(-900%);
+  }
+}
+
+@keyframes carMovement3 {
+  0% {
+    transform: translateX(900%);
+  }
+  100% {
+    transform: translateX(-900%);
+  }
+}

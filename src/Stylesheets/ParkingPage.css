@@ -1,0 +1,63 @@
+.top-section-ParkingPage{
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+}
+.map-container-ParkingPage{
+  flex: 1;
+}
+.parking-container-ParkingPage{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex:1;
+  background-color: #edf1d651;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #9dc08b6b;
+}
+.down-arrow-container-ParkingPage:hover{
+  color: #609966;
+  transition: .3s;
+}
+.payment-info-section-parkingPage{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 250px;
+  margin-bottom: 100px;
+}
+.main-payment-info-section{
+  width: 40%;
+  height: 70vh;
+  background-color: #edf1d651;
+  border:1px solid black;
+  box-shadow: 0 0 10px #00000046;
+}
+.top-main-payment-info-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  height: 35%;
+  margin-top: 20px;
+  font-size: 1.30em;
+}
+.top-main-payment-info-section img{
+  box-shadow: 0 0 10px #00000046;
+}
+.bot-main-payment-info-section{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
