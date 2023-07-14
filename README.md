@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# Svelt - Gestión de Aparcamientos
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+¡Bienvenido/a al repositorio de Svelt! Este proyecto forma parte de mi proyecto final de grado y tiene como objetivo proporcionar una solución completa para la gestión de aparcamientos. La aplicación está desarrollada utilizando tecnologías como React, React Router, Leaflet, MUI, entre otras.
 
-## Available Scripts
+## Características principales
 
-In the project directory, you can run:
+-   Visualización y búsqueda de aparcamientos en un mapa interactivo (Leaflet y OpenStreetMap).
+-   Información detallada sobre cada aparcamiento, como ubicación, disponibilidad, horarios, tarifas, etc.
+-   Reserva de plazas de aparcamiento disponibles.
+-   Administración de aparcamientos por parte de los propietarios.
+-   Integración con una API en PHP para el manejo de los datos.
+- Sostenibilidad con el medio Ambiente ♻️
 
-### `npm start`
+## Requisitos previos
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Asegúrate de tener los siguientes requisitos previos antes de instalar y ejecutar la aplicación:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+-   Node.js: [Descargar e instalar Node.js](https://nodejs.org/)
+-   Git: [Descargar e instalar Git](https://git-scm.com/)
 
-### `npm test`
+## Instalación
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Sigue estos pasos para instalar la aplicación en tu entorno local:
 
-### `npm run build`
+1.  Clona este repositorio utilizando el siguiente comando:
+    
+    
+    `git clone https://github.com/tu-usuario/nombre-del-repositorio.git` 
+    
+2.  Accede al directorio del repositorio:
+    
+    `cd nombre-del-repositorio` 
+    
+3.  Instala las dependencias utilizando npm:
+    
+    
+    `npm install` 
+    
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Configuración
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Antes de ejecutar la aplicación, asegúrate de configurar la conexión con la API creada en PHP. Sigue estos pasos para configurarla:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1.  Abre la carpeta `api` del proyecto
+    
+2.  En cada archivo donde se hace la llamada tendrás como **constantes** las direcciones URL locales a las cuales se realizan las llamadas Asincronas (Asegurate de cambiarlas a tu conveniencia )
 
-### `npm run eject`
+Por defecto: 
+    
+    `const URL=`http://localhost/Svelt_API_Backend/auth` 
+*Si se ejecutase en el puerto 80 de apache (~/xampp/htdocs/Svelt_API_Backend)*    
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Ejecución
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Una vez configurada la conexión con la API, puedes ejecutar la aplicación utilizando el siguiente comando:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+`npm start` 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+La aplicación se ejecutará en el modo de desarrollo. Abre tu navegador y accede a [http://localhost:3000](http://localhost:3000/) para verla en acción.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contacto
 
-### Code Splitting
+Si tienes alguna pregunta o sugerencia sobre este proyecto, no dudes en ponerte en contacto conmigo a través de mi dirección de correo electrónico [[averbec580@gmail.com](mailto:averbec580@gmail.com)].
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+# Diagramas de Aporte
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```mermaid
+graph LR
+A[User] --> B((Reserva))
+B --> D{Aparcamientos}
+```
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```mermaid
+graph LR
+A[Super User] --> B((Reserva))
+A --> C(Creación)
+B --> D
+C --> D{Aparcamientos}
+D --Comisiones--> A
+```
